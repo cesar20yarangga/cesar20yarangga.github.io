@@ -1,16 +1,20 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const navLinks = document.querySelectorAll('nav ul li a');
+// Efek Mengetik
+new TypeIt("#typing", {
+  speed: 60,
+  loop: true
+})
+  .type("Hello Welcome to My World of Code & Creativity")
+  .pause(1000)
+  .delete()
+  .type("I am Ceca, a Developer and Programmer")
+  .pause(1000)
+  .delete()
+  .type("Nice to meet you :)")
+  .pause(1000)
+  .delete()
+  .go();
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetId = link.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
-
-            window.scrollTo({
-                top: targetSection.offsetTop - document.querySelector('header').offsetHeight,
-                behavior: 'smooth'
-            });
-        });
-    });
+// Mode Terang/Gelap
+document.getElementById('toggle-mode').addEventListener('click', () => {
+  document.body.classList.toggle('light-mode');
 });

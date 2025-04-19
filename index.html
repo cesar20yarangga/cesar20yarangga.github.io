@@ -1,62 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CeaDutchProgrammer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home">
-        <h2>Welcome</h2>
-        <p>Hi! I'am Nehemia.....</p>
-        <img src="1970-01-21-031935530.jpg" alt="Nehemia's Photo" class="profile-photo">
+  <!-- Background animasi -->
+  <div class="background-animation"></div>
+
+  <!-- Tombol Mode -->
+  <button id="toggle-mode" class="mode-toggle">🌓</button>
+
+  <!-- Navigasi Samping -->
+  <nav class="side-nav">
+    <a href="#home" class="nav-btn"><img src="th.jpeg" alt="Home"></a>
+    <a href="#tentang" class="nav-btn"><img src="download.jpeg" alt="Tentang"></a>
+    <a href="#skill" class="nav-btn"><img src="OIP.jpeg" alt="Skill"></a>
+    <a href="#galeri" class="nav-btn"><img src="download (1).jpeg" alt="Galeri"></a>
+    <a href="#kontak" class="nav-btn"><img src="OIP (1).jpeg" alt="Kontak"></a>
+  </nav>
+
+  <main class="main-container">
+
+    <!-- HOME -->
+    <section id="home" class="section">
+      <div class="home-content">
+        <img src="447210213_812092164186751_8370320214511142400_n.jpg" alt="Foto Profil" class="profile-img"/>
+        <h1 id="typing" class="typing-text"></h1>
+      </div>
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I am a designer, video editor, and content creator.</p>
-        <p>Someone who focuses on creating content, whether in the form of writing, images, videos, podcasts, or other forms. They have creative skills in producing interesting content.</p>
+    <!-- TENTANG + PENDIDIKAN -->
+    <section id="tentang" class="section">
+      <h2>Tentang Saya & Pendidikan</h2>
+      <p>Halo, saya <strong>Fricho Caesarrea Yarangga</strong> dari <strong>Biak, Papua</strong>. Saya adalah mahasiswa Sistem Informasi di Universitas Ottow Geissler, dan saya sangat tertarik pada pengembangan web dan teknologi modern.</p>
+      <div class="education">
+        <p><strong>-</strong> SD Negeri Ridge 1 Biak Papua</p>
+        <p><strong>-</strong> SMP Negeri 2 Biak Kota Papua</p>
+        <p><strong>-</strong> SMA YPPK Yosudarso Biak Papua</p>
+        <p><strong>-</strong> Universitas Ottow Geissler Papua</p>
+        <a href="CV_Fricho_Caesarrea_Yarangga.pdf" download class="link download-btn">
+          <img src="donlowd.jpg" alt="Download CV" class="icon-img"> Download CV Saya
+        </a>
+      </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-           
-            <p>vidio edukasi karya saya </video>.</p>
-            <video controls>
-                <source src="lv_0_20240612134207.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        
+    <!-- SKILL -->
+    <section id="skill" class="section">
+      <h2>Skill Saya</h2>
+      <p>Saya menguasai beberapa bahasa pemrograman berikut, dan terus mengembangkan diri melalui berbagai proyek pribadi.</p>
+      <div class="skills">
+        <div class="skill"><span>HTML</span><div class="bar"><div class="fill html"></div></div></div>
+        <div class="skill"><span>CSS</span><div class="bar"><div class="fill css"></div></div></div>
+        <div class="skill"><span>JavaScript</span><div class="bar"><div class="fill js"></div></div></div>
+        <div class="skill"><span>PHP</span><div class="bar"><div class="fill php"></div></div></div>
+        <div class="skill"><span>Python</span><div class="bar"><div class="fill python"></div></div></div>
+      </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <div class="buttons">
-                        
-            <a href="mailto:nehemiapelamonia78@gmail.com" class="button">Email</a>
-           
-        </div>
-       </section>
+    <!-- GALERI -->
+    <section id="galeri" class="section">
+      <h2>Galeri / Portofolio</h2>
+      <div class="gallery">
+        <img src="Cuplikan layar 2024-04-30 205951.png" alt="Project 1" class="zoom-img"/>
+        <img src="Cuplikan layar 2024-04-30 210901.png" alt="Project 2" class="zoom-img"/>
+        <img src="Cuplikan layar 2024-05-30 140258.png" alt="Project 3" class="zoom-img"/>
+        <img src="Cuplikan layar 2024-11-24 025021.png" alt="Project 4" class="zoom-img"/>
+      </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 My Portfolio</p>
-    </footer>
-    
-    <script src="script.js"></script>
+    <!-- KONTAK -->
+    <section id="kontak" class="section">
+      <h2>Kontak Saya</h2>
+      <p><img src="email.jpg" alt="Email" class="icon-img">
+        <a href="mailto:cesariofico1@gmail.com" class="link">cesariofico1@gmail.com</a>
+      </p>
+      <p><img src="contact.jpeg" alt="WhatsApp" class="icon-img">
+        <ahref="https://wa.me/6281234567890" class="link" target="_blank">+62 812-3456-7890 (WhatsApp)</a>
+      </p>
+      <p><img src="maps.jpeg" alt="Lokasi" class="icon-img">
+        <ahref="https://maps.app.goo.gl/W8evg76Kj3nQLpuB6" class="link" target="_blank">📍 Lokasi Saya</a>
+      </p>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1063.6915469706803!2d140.64537562985024!3d-2.587085965089382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1745031646852!5m2!1sid!2sid"
+          width="100%" 
+          height="350" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
